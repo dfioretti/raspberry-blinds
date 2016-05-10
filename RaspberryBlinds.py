@@ -16,12 +16,12 @@ def turnOffMotors():
 atexit.register(turnOffMotors)
 
 
-myStepper = mh.getStepper(200, 1)
-myStepper.setSpeed(30)
+myStepper = mh.getStepper(35, 1)
+myStepper.setSpeed(90)
 
 i = 0
 while (True):
     print("run...%i" % i)
-    myStepper.step(100, Adafruit_MotorHAT.FORWARD, Adafruit_MotorHAT.SINGLE)
+    myStepper.step(350, Adafruit_MotorHAT.FORWARD, Adafruit_MotorHAT.SINGLE)
     i += 1
 
